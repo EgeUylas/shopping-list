@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = 'https://shopping-list-backend-hsjl.onrender.com/api';
 
 // Kullanıcı kaydetme
 export const registerUser = async (name, surname, email, password) => {
