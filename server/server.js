@@ -13,7 +13,7 @@ const port = 5000;
 connectDB();
 
 app.use(cors({
-  origin: ['https://shopping-list-ochre-beta.vercel.app', 'http://localhost:3000'],
+  origin: 'http://localhost:3000',
   credentials: true
 }));
 app.use(bodyParser.json());

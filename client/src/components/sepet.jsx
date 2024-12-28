@@ -25,7 +25,7 @@ const Sepet = () => {
         return;
       }
 
-      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+      const API_URL = 'http://localhost:5000/api';
       const response = await axios.post(`${API_URL}/cart/share`, {
         userId,
         items: cartItems.map(item => ({

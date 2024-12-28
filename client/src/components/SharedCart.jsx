@@ -12,7 +12,7 @@ const SharedCart = () => {
   useEffect(() => {
     const fetchSharedCart = async () => {
       try {
-        const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+        const API_URL = 'http://localhost:5000/api';
         const response = await axios.get(`${API_URL}/cart/shared/${shareId}`);
         if (response.data.success) {
           setCartItems(response.data.cart.items);
