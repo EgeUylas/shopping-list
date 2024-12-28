@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://shopping-list-backend-hsjl.onrender.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://shopping-list-backend-hsjl.onrender.com/api';
 
 // Kullanıcı kaydetme
 export const registerUser = async (name, surname, email, password) => {
